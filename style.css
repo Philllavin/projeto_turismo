@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-image: url(assets/back2.png);
     background-repeat: no-repeat;
@@ -5,12 +9,12 @@ body{
 }
 
 #page{
-    box-sizing: border-box;
     background-color: rgb(247, 124, 206);
-    width: 800px;
+    max-width: 800px;
+    width: 100%;
+    margin: 50px auto;
     border-radius: 20px;
-    padding: 40px;
-    margin: 50px auto; 
+    padding: 40px; 
 }
 
 figure{
@@ -34,6 +38,10 @@ h1, h2, h3{
     text-align: center;
 }
 
+h1{
+    color: rgb(89, 72, 242);
+}
+
 h3{
     width: fit-content;
     margin: 0 auto;
@@ -44,4 +52,12 @@ main{
     font-family: "Ubuntu", sans-serif;
 }
 
+nav {
+    display: flex;
+    gap: 20px;
+    font-family: "Ubuntu", sans-serif;
+}
 
+nav a{
+    color: rgb(130, 63, 6);
+}
